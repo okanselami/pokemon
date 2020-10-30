@@ -1,0 +1,54 @@
+@import '../../../public/styles/vars.scss';
+
+.card {
+  width: 80%;
+  min-height: 200px;
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 30px auto;
+  text-align: center;
+
+  & > img {
+    padding-top: 20px;
+  }
+  & > .specs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $primaryPadding;
+    text-align: left;
+  }
+  .spec_type {
+    font-size: 20px;
+  }
+
+  #close_button {
+    display: flex;
+    justify-content: flex-end;
+    padding: $primaryPadding;
+    cursor: pointer;
+  }
+
+  & > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  &:hover {
+    background-color: $hoverBgColor;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+}
+@media all and (min-width: 1023px) {
+  .card {
+    width: 30%;
+  }
+}
