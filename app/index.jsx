@@ -10,7 +10,7 @@ const Detail = React.lazy(() => import('./containers/Detail'));
 function App() {
   return (
     <div className="layout">
-      <Router>x
+      <Router>
         <React.Suspense fallback={<div>loading</div>}>
           <Switch>
             <Route exact path='/' component={Home} />
